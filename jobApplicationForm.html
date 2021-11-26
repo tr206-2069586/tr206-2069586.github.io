@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title>Foster School of Business Application</title>
+    </head>
+<body>
+<h2>Foster School of Business Application</h2>
+<form action="http://gclass.alexburner.com/formtest.php" method="post">
+	<fieldset>
+		<legend>UW Account</legend>
+		<div class="UWEmail">
+			<label>Email:</label> 
+			<input type="text" name="email">
+		</div>
+		<div class="Password">
+			<label>Password:</label> 
+			<input type="password" name="password">
+		</div>
+		<div class="PasswordVerify">
+			<label>Repeat password:</label> 
+			<input type="password" name="password_r">
+		</div>
+  </fieldset>
+
+	<fieldset>
+		<legend>Personal Information</legend>
+		<div class="FirstLastName">
+			<label>First Name:</label> 
+			<input type="text" name="firstname"><br>
+			<label>Last Name:</label>
+			<input type="text" name="lastname">
+		</div>
+		<div class="GradYear">
+			<label>Year of Graduation:</label>
+			<select name="year">
+			<option value="" selected="true">Choose a year</option>
+				<option value="19">2019</option>
+				<option value="20">2020</option>
+				<option value="21">2021</option>
+				<option value="22">2022</option>
+			</select>
+		</div>
+		<div class="Gender">
+			<label>Gender:</label><br>
+			<input type="radio" name="gender" value="female"> Female<br>
+      		<input type="radio" name="gender" value="male"> Male<br>
+      		<input type="radio" name="gender" value="other"> Other
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Grade</legend>
+		<div class="DualFocuses">
+			<label>Do you want to be considered for two focuses?</label> 
+			<input type="radio" name="legal" value="yes">Yes
+			<input type="radio" name="legal" value="no">No
+		</div>
+		<div class="TypeOfFocus">
+			<label>What type of focus? (check all that apply)</label>
+			<ul>
+				<li><input type="checkbox" name="Accounting" value="Accounting">Accounting</li>
+				<li><input type="checkbox" name="Finance" value="Finance">Finance</li>
+				<li><input type="checkbox" name="Information Systems" value="Information Systems">Information Systems</li>
+				<li><input type="checkbox" name="Marketing" value="Marketing">Marketing</li>
+
+			</ul>
+		</div>
+		<div class="Grades">
+			<label>Prerequisites Grades</label>
+			<table>
+				<tr>
+					<td></td>
+					<th>ECON 200</th>
+					<th>ECON 201</th>
+					<th>MATH112</th>
+					<th>ACCTG 215</th>
+					<th>ACCTG 225</th>
+					<th>QMETH 201</th>
+				</tr>
+				<tr>
+					<th>Your GPA</th>
+					<td><input type="gpa" size="5" name="econ200"></td>
+					<td><input type="gpa" size="5" name="econ201"></td>
+					<td><input type="gpa" size="5" name="math112"></td>
+					<td><input type="gpa" size="5" name="acctg215"></td>
+					<td><input type="gpa" size="5" name="acctg225"></td>
+					<td><input type="gpa" size="5" name="qmeth201"></td>
+				</tr>
+			</table><br>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Personal Statement</legend>
+		<div class="Why">
+			<label>1. Why should you be admitted to foster? (300 words maximum)</label><br>
+			<textarea name="choose" rows="6" cols="60"></textarea>
+		</div>
+		<div class="Distinguishs">
+			<label>2. What distinguishs you from other applicants? (300 words maximum)</label><br>
+			<textarea name="project" rows="6" cols="60"></textarea>
+		</div>
+		<div class="ExtraInfo">
+			<label>3. Additional Information that you would like us to know:</label><br>
+			<textarea name="project" rows="6" cols="60">Eg: reason behind your failing grade for certain course...</textarea>
+		</div>
+	</fieldset>
+
+	<input type="submit" value="Submit form">
+</form>
+</body>
+</html>
