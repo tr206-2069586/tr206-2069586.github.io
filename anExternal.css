@@ -1,0 +1,35 @@
+#Paragraph{
+    text-align: center;
+    position: relative;
+}
+
+#Picture{
+	text-align: center; 
+}
+
+#Paragraph1{
+	font-family: "times";
+    border-radius: 15px;
+    border: 10px dotted rgb(81, 145, 65);
+}
+
+#Paragraph2{
+    border: dotted;
+    font-family: "Arial";
+    padding: 20px; 
+    width: 750px;
+    height: 100px; 
+}
+
+
+
+#Photo2{
+	margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#Photo3{
+	float: right;
+}
